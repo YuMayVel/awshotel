@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="./layout/viewlayout.html">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+    <div layout:fragment="view">
+        <div class="container">
+            <h1 class="text-center text-muted my-3">Room Details</h1>
+
+            <div class="row mt-4">
+                <div class="col-sm-8">
+                    <img src="'../../static/images/101.jpeg" th:src="@{'/images/'+${room.getRoomsNumber()}+'.jpeg'}"  class="rounded img-fluid"  alt="Responsive image">
+                </div>
+                <div class="col-sm-4">
+                    <p th:text="${'Room Number '+ room.roomsNumber}" class="display-5 text-info"></p>
+                    <p th:text="${'Room Status '+ room.roomStatus}" class="display-5 text-info"></p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi corporis, deserunt earum non quibusdam saepe tenetur unde! Debitis exercitationem iste maiores nostrum porro praesentium quam quod sed, sunt ut voluptatem!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, amet aperiam blanditiis cum dicta, enim esse et harum, numquam officia perspiciatis porro quia rem sequi soluta sunt suscipit unde ut?
+                </div>
+            </div>
+
+
+            <div>
+                <a href="#" class="btn btn-primary mx-3"
+                   th:href="@{'/view/userprofile/'+ ${room.id}}">Booking</a>
+                <a href="#" class="btn btn-primary"
+                   th:href="@{'/home'}">Home</a>
+            </div>
+        </div>
+        </div>
+</body>
+</html>

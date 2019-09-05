@@ -19,7 +19,7 @@
                             <p class="card-text" th:text="${'Room Number : '+room.roomsNumber}"></p>
                             <p class="card-text" th:text="${'Room Status : '+room.roomStatus}"></p>
                             <p class="card-text" th:text="${'Room Type  : '+room.roomType}"></p>
-                            <a href="#" th:href="@{'/room/'+${room.id}}" class="btn btn-primary btn-sm">Go Details</a>
+                            <a href="#" th:href="@{'/view/rooms/'+${room.id}}" class="btn btn-primary btn-sm">Go Details</a>
                         </div>
                     </div>
                 </div>
