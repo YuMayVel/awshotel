@@ -58,7 +58,7 @@ public class ViewController {
   @GetMapping("/view/booking")
   public String bookingCreate(Model model){
     model.addAttribute("bookings",new Bookings());
-    return "/view/bookingFrom";
+    return "/views/bookingFrom";
   }
 
   @PostMapping("/view/booking")
