@@ -78,7 +78,9 @@ public class Bookings {
     this.numbersOfChildren = numbersOfChildren;
   }
 
-
+  public LocalDate getFromStart() {
+    return fromStart;
+  }
 
   public boolean isBookingCancelled() {
     return bookingCancelled;

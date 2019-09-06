@@ -54,6 +54,9 @@
 
     <div layout:fragment="view">
     <section class="p-5">
+        <div th:if="${booking}" class="alert alert-success" role="alert">
+            <p>Successfully register !<span th:text="${bookingNumber}"></span></p>
+        </div>
 
         <div class="container-fluid">
             <div class="row">
