@@ -9,6 +9,9 @@ public class HomeController {
   @GetMapping("/home")
   public String home(Model model){
    // model.addAttribute("tagline","Home Page");
+    model
+            .addAttribute("booking",model.containsAttribute("booking"));
+    model.addAttribute("bookingNumber",model.containsAttribute("bookingNumber"));
     return "layout/viewlayout";
   }
 
