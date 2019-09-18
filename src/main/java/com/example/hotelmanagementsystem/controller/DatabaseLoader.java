@@ -33,18 +33,18 @@ public class DatabaseLoader implements CommandLineRunner {
 
 
     UserProfile userProfile=new UserProfile();
-    userProfile.setEmail("kyaw@gmail.com");
+    userProfile.setEmail("yumay@gmail.com");
     userProfile.setFirstName("Kyaw");
     userProfile.setLastName("Lwin");
     userProfile.setGender(Gender.MALE);
     userProfile.setPhoneNumber("1234567");
     userProfile.addRole(adminRole);
-    userProfile.setPassword(bCryptPasswordEncoder.encode("kyaw"));
+    userProfile.setPassword(bCryptPasswordEncoder.encode("yumay"));
 
 
-   /* this.roleRepository.save(adminRole);
+    /*this.roleRepository.save(adminRole);
     this.roleRepository.save(userRole);
-    this.userProfileRepository.save(userProfile);
-    */
+    this.userProfileRepository.save(userProfile);*/
+
   }
 }
